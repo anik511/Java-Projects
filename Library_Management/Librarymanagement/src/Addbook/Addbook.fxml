@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="window_addbook" prefHeight="580.0" prefWidth="722.0" style="-fx-background-color: #7DCEA0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Addbook.AddbookController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-4.0" prefHeight="499.0" prefWidth="377.0" style="-fx-background-color: #4DB6AC;" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="346.0" AnchorPane.topAnchor="-4.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Book ">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="booktitle" prefHeight="39.0" prefWidth="633.0" promptText="Book Title">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="bookid" prefHeight="38.0" prefWidth="633.0" promptText="Book ID">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Author" prefHeight="42.0" prefWidth="633.0" promptText="Author">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="publishar" prefHeight="43.0" prefWidth="633.0" promptText="Publisher">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#addbook" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #34495E;" text="Add" textFill="#fffdfd">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bell MT" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="377.0" layoutY="387.0" prefHeight="193.0" prefWidth="346.0" style="-fx-background-color: #FFCC80;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Book ">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="deletebook" prefHeight="44.0" prefWidth="237.0" promptText="Book ID">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#deletebookmethod" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #34495E;" text="Delete" textFill="#fffdfd">
+               <font>
+                  <Font name="Bell MT" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <Button layoutX="14.0" layoutY="506.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="128.0" style="-fx-background-color: #34495E;" text="Back" textFill="#fcf9f9">
+         <font>
+            <Font name="Californian FB Bold" size="27.0" />
+         </font>
+      </Button>
+      <VBox alignment="CENTER" layoutX="377.0" prefHeight="386.0" prefWidth="346.0" style="-fx-background-color: #4DB6AC;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Udate Book List ">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="updatebooktitle" prefHeight="39.0" prefWidth="633.0" promptText="Book Title">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="updatebookid" prefHeight="38.0" prefWidth="633.0" promptText="Book ID">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="updateauthor" prefHeight="42.0" prefWidth="633.0" promptText="Author">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="updatepublishar" prefHeight="43.0" prefWidth="633.0" promptText="Publisher">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#upbooklist" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #34495E;" text="Update" textFill="#fffdfd">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bell MT" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

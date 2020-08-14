@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="window_addmember" prefHeight="584.0" prefWidth="730.0" style="-fx-background-color: #7DCEA0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Addmember.AdmemberController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-3.0" prefHeight="492.0" prefWidth="371.0" style="-fx-background-color: #4DB6AC;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Member ">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Member Name">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="membername" prefHeight="39.0" prefWidth="633.0" promptText="Member Name">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member ID">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="memberid" prefHeight="38.0" prefWidth="633.0" promptText="Member ID">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="memberphone" prefHeight="42.0" prefWidth="633.0" promptText="Phone Number">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="memberemail" prefHeight="43.0" prefWidth="633.0" promptText="E-mail">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#addmember" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #34495E;" text="Add" textFill="#fffdfd">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bell MT" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="14.0" layoutY="512.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="128.0" style="-fx-background-color: #34495E;" text="Back" textFill="#fcf9f9">
+         <font>
+            <Font name="Californian FB Bold" size="27.0" />
+         </font>
+      </Button>
+      <VBox alignment="CENTER" layoutX="367.0" prefHeight="375.0" prefWidth="365.0" style="-fx-background-color: #4DB6AC;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Udate Member List ">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Member">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="updatemembername" prefHeight="39.0" prefWidth="633.0" promptText="Member Name">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member ID">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="updatememberid" prefHeight="38.0" prefWidth="633.0" promptText="Member ID">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="updatememberphone" prefHeight="42.0" prefWidth="633.0" promptText="Phone Number">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="318.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="updatememberemail" prefHeight="43.0" prefWidth="633.0" promptText="E-mail">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#updatememberlist" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #34495E;" text="Update" textFill="#fffdfd">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bell MT" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="367.0" layoutY="375.0" prefHeight="205.0" prefWidth="365.0" style="-fx-background-color: #FFCC80;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Member ">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Member ID">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <TextField fx:id="deletemember" prefHeight="44.0" prefWidth="237.0" promptText="Member ID">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#deletemember" prefHeight="48.0" prefWidth="129.0" style="-fx-background-color: #34495E;" text="Delete" textFill="#fffdfd">
+               <font>
+                  <Font name="Bell MT" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
