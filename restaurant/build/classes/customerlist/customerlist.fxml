@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="customerlist" prefHeight="566.0" prefWidth="668.0" style="-fx-background-color: #1E88E5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customerlist.CustomerlistController">
+   <children>
+      <Button layoutX="313.0" layoutY="501.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="102.0" text="Back">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="customertable" prefHeight="495.0" prefWidth="668.0">
+        <columns>
+          <TableColumn fx:id="customername" prefWidth="233.0" text="Customer Name" />
+          <TableColumn fx:id="customerphone" prefWidth="220.0" text="Customer Phone Number" />
+            <TableColumn fx:id="customeremail" prefWidth="214.0" text="Customer E-mail" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
